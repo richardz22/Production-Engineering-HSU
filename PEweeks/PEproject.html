@@ -48,8 +48,8 @@
 				<div id="main" class="wrapper style1">
 					<div class="container">
 						<header class="major">
-							<h2>Week Eight </h2>
-							<p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
+							<h2>My Personal Project </h2>
+							<p>A design study</p>
 
 						</header>
 
@@ -59,10 +59,74 @@
 									<div class="box alt">
 										<div class="row gtr-50 gtr-uniform">
 											
-											<div class="col-6 col-6-xsmall"><span class="image fit"><img src="../images/PEweekPICs/2Robots.jpeg" alt="" /></span></div>
-											<div class="col-6 col-6-xsmall"><span class="image fit"><img src="../images/PEweekPICs/robotParts.jpg.jpeg" alt="" /></span></div>
-								<h3>It´s alive!!</h3>
-								<p><span class="container.small"><iframe
+											<div class="col-6 col-6-xsmall"><span class="image fit square"><img src="../images/Project/libelle1.jpg" alt="" /></span></div>
+											<div class="col-6 col-6-xsmall"><span class="image fit square"><img src="../images/Project/libelle2.jpg" alt="" /></span></div>
+										</div>
+									</div>
+								<h4>The Start</h4>
+								
+								<p>It took a long time to come up with a suitable idea for this project. At the beginning of this trimester I started to think about possible projects in general. Bionics in comibination of drones got my attention, i wnated to create a dragonfly like drone with one of my friends,  because i think that the future of drones lays in bionics. So it seemed obvious that it would make sense to work towords that goal in this module. Unfortunately after drawing up some initial scetches I realised that it is almost impossible for me to create even a prototype without the electronics inside. My understanding of mechanical engineering is just not good enough to create the correct translation etc. I was unsure what kind of complexity is expected so I talked to Dr. Redlich and we came to the conclusion that i should focus on a design study of the extrem manuverbality of the wings. </p>
+								<p>After intial esearch of current approaches of companys like FESTO for example, I found out that most prototype rely on 3 or 4 joints to portrait the freedom of movement. But i saw that this technology is not flawless. I thought about an more efficent way of movement for the wing that required less joints. The idea of a ball joint seemed to be the ideal solution for the complexity of movement.</p>
+								<h4>The First ball joints</h4>
+									<div class="box alt">
+										<div class="row gtr-25 gtr-uniform">
+											
+											<div class="col-4 col-4-xsmall"><span class="image fit square"><img src="../images/Project/Base.png" alt="" /></span></div>
+											<div class="col-4 col-4-xsmall"><span class="image fit square"><img src="../images/Project/Ball.png" alt="" /></span></div>
+											<div class="col-4 col-4-xsmall"><span class="image fit square"><img src="../images/Project/Screw.png" alt="" /></span></div>
+
+										</div>
+									</div>
+									<p>Above shown was the first ball joint I found on thingiverse, it made a good first look and was really simple which i liked. But the thread was really hard for the 3D Printer and made it really unsmooth and the range of motion was really disappointing. Yet it gave me a rough idea of what i was looking for. </p>
+									<p>The second open source ball joint i have found was way bether. It also consisted of 3 parts which you can see below.</p>
+									<div class="box alt">
+										<div class="row gtr-25 gtr-uniform">
+											
+											<div class="col-4 col-4-xsmall"><span class="image fit square"><img src="../images/Project/2bjclip.png" alt="" /></span></div>
+											<div class="col-4 col-4-xsmall"><span class="image fit square"><img src="../images/Project/2bjbase.png" alt="" /></span></div>
+											<div class="col-4 col-4-xsmall"><span class="image fit square"><img src="../images/Project/2bjball.png" alt="" /></span></div>
+
+										</div>
+									</div>
+									<p>This ball joint was way better in terms of range of motion and smoothness. I was still not completly happy with this solution, it felt like there was a bether solution for even more freedom of movement. After i could not find a bether alternative of open source ball joints I decided to try and create my own ball joint in Fusion360.</p>
+								<h4>My own ball joint</h4>
+								<p>After some first sketches I started to create my own ball joint. The main idea was to create a ball joint that has the most freedom of movement possible while still being easy to print and assemble. After some first trials I came up with the following design:</p>
+								<p><span class="image fit square left"><img src="../images/Project/lagerskizze.png" alt="" /></span>My Idea was to create a base that would have an narrow holding mechanism for the ball. This would reduce the area that limits the movement of the ball. It would need to be high enough so the ball would not fall out but with the most possible range of motion. I knew that my structure would be around a spheric object so i used the rotation function from Fusion360 to crate an proper surrounding for the ball. The next steps where clear: create a base,a ball and the possibilty to connect something with it i handled it all in Fusion360. altough I had some major problems with the software and was working really slow, due to the lack of experience, it took a really long time to get a final result that suited my idea.</p>	
+								<p>I used the cut out function to create the place where the ball sits. It is important that you scale down the ball so it can move smoothly. A downscaling to 99% seemed to fit really good in real life after some try and error.</p>
+									<div class="box alt">
+										<div class="row gtr-25 gtr-uniform">
+											
+											<div class="col-4 col-4-xsmall"><span class="image fit square"><img src="../images/Project/Screenshot 2025-12-02 194905.png" alt="" /></span></div>
+											<div class="col-4 col-4-xsmall"><span class="image fit square"><img src="../images/Project/Kugellager.png" alt="" /></span></div>
+											<div class="col-4 col-4-xsmall"><span class="image fit square"><img src="../images/Project/lagerkoerper.png" alt="" /></span></div>
+
+										</div>
+									</div>
+								<p>After some testing and printing i came to the conclusion that my design was pretty good. The range of motion was way better than the previous designs and it felt really smooth. I was able to attach wings to the clip part and test the movement. It worked really well and i was happy with the result. Altough it came to some complications during orinting which you will see next.</p>
+								<p><span class="image fit square left"><img src="../images/Project/failedjoin.jpg" alt="" /></span>The Thingiverse balljoint(to the left) was really badly printed. On another try with the wings(we will get to them later) i got a really weird fail, the prints started overlapping even though they should not. This issue occured many times so i knew ther had to be something of. The accuracy was of, the parts did not fit together and the surfaces were really rough. I woundered why this could be the case, so i changed the printer, the fillament and the PrusaSlicer code and it turned out pretty well when i started to print the oarts individual, but I am still convinced that my design is bether for my purpose. I think my problems can be traced back to the movement of the printer nozzle. I have some pretty small individual structures and if the printer moves long distances the surfacetension of the small parts can breake and tehy get dragged along the nozzle on top of ther other parts. I did not figure out how to compensate for that till my very last prints, which you will see later on.</p>
+								<p></p>
+								    <div style="clear: both;"></div>
+
+										<div class="box alt">
+										<div class="row gtr-25 gtr-uniform">
+											<div class="col-4 col-4-xsmall">
+											<span class="image fit square">
+												<img src="../images/Project/failedwing.jpg" alt="" />
+											</span>
+											</div>
+											<div class="col-4 col-4-xsmall">
+											<span class="image fit square">
+												<img src="../images/Project/failedwing2.jpg" alt="" />
+											</span>
+											</div>
+											<div class="col-4 col-4-xsmall">
+											<span class="image fit square">
+												<img src="../images/Project/failedjoint.jpg" alt="" />
+											</span>
+											</div>
+										</div>
+										</div>
+								<p>asdadadada<span class="video-wrapper video"><iframe
 									width="360"
 									height="360"
 									src="https://www.youtube.com/embed/F3Z86lEs1d0?rel=0&controls=0&autoplay=1&mute=1&loop=1&playlist=F3Z86lEs1d0"
@@ -70,7 +134,7 @@
 									frameborder="0"
 									allow="autoplay; encrypted-media; picture-in-picture"
 									allowfullscreen
-									></iframe><ifram src="https://youtube.com/shorts/F3Z86lEs1d0"></ifram></span>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at magna consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam cubilia adipiscing interdum aliquet aliquet placerat cubilia accumsan cep ante nullam adipiscing tortor odio. Iaculis adipiscing accumsan nascetur in cras. Lacinia placerat.</p>
+									></iframe></span>Aliquam massa urna, imperdiet sit amet mi non, bibendu</p>
 								<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique faucibus magna adipiscing aliquet blandit nisi dolor accumsan nascetur lorem. Vis enim. Curae. Mi arcu vis aliquam ipsum non accumsan ac mi faucibus amet eu accumsan erat interdum semper accumsan. Eu sagittis tellus accumsan neque lorem penatibus in porttitor. Vivamus commodo curae. Condimentum lobortis praesent id ac lorem. Lorem vis ipsum dolor feugiat consequat dolore adipiscing.</p>
 								<h3>Sed Magna Ornare</h3>
 								<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus. In accumsan lorem nunc ultrices a ac eu accumsan ac id nullam. Nec lobortis. Faucibus. Mi commodo laoreet arcu at non mi lacinia aliquet non lobortis phasellus accumsan nascetur varius. Integer orci porttitor eu faucibus aliquet faucibus ac accumsan adipiscing accumsan odio. Ut adipiscing.</p>
